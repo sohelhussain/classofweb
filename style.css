@@ -9,24 +9,45 @@ html,body{
     height: 100%;
 }
 #main{
-    background-image: url(https://www.glitched.online/wp-content/uploads/2023/08/F4wbPHTWkAA2IiB-scaled.jpeg);
-    background-size: cover;
     width: 100%;
     height: 100%;
-}
-#nav{
-    width: 100%;
-    height: 40px;
-    background-color: black;
-    color: white;
+    background-color: aqua;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    background-image: url(https://wallpaperaccess.com/full/250145.jpg);
+    background-size: cover;
+    background-position: center;
 }
-#nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 400;
+.elame{
+    width: 300px;
+    height: 400px;
+    background-color: bisque;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    box-shadow: 4px 4px 10px black;
+    position: relative;
+    top: 120px;
+}
+.elame:hover{
+    scale: 1.2;
+}
+.a{
+    background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_vl/sources/r1/cms/prod/9712/629712-v);
+    background-size: cover;
+    background-position: center;
+}
+.b{
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.c{
+    background-image: url(https://play-lh.googleusercontent.com/an40y-0PvdNIudco5YxH5CNTeDn_ArxQiaDrpdTStmCl4WRy_P_9W368liAJPfFxUslX);
+    background-size: cover;
+    background-position: center;
+}
+img{
+    position: absolute;
+    top: 0;
 }
