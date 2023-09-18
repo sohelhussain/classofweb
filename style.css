@@ -11,43 +11,70 @@ html,body{
 #main{
     width: 100%;
     height: 100%;
-    background-color: aqua;
     display: flex;
+}
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    background-image: url(https://wallpaperaccess.com/full/250145.jpg);
+    background-image: url(images/watch-ultra.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
-.elame{
-    width: 300px;
-    height: 400px;
-    background-color: bisque;
-    border-radius: 8px;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-    box-shadow: 4px 4px 10px black;
-    position: relative;
-    top: 120px;
+#left img{
+    width: 25%;
+    margin-top: 50px;
 }
-.elame:hover{
-    scale: 1.2;
+#left h4{
+    margin: 20px 0px;
+    font-size: 24px;
+    font-weight: 400;
 }
-.a{
-    background-image: url(https://img1.hotstarext.com/image/upload/f_auto,t_vl/sources/r1/cms/prod/9712/629712-v);
+#left h5{
+    font-size: 19px;
+    font-weight: 400;
+    opacity: .5;
+}
+.link{
+    margin-top: 25px;
+}
+.link a{
+    color: #0066CC;
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration: underline solid #0066CC;
+}
+#l-btn{
+    padding-left: 40px;
+}
+#right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/apple-watch.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
-.b{
-    background-image: url(https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg);
-    background-size: cover;
-    background-position: center;
+#right img{
+    width: 50%;
+    margin-top: 50px;
 }
-.c{
-    background-image: url(https://play-lh.googleusercontent.com/an40y-0PvdNIudco5YxH5CNTeDn_ArxQiaDrpdTStmCl4WRy_P_9W368liAJPfFxUslX);
-    background-size: cover;
-    background-position: center;
+#right h4{
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 24px;
+    font-weight: 400;
 }
-img{
-    position: absolute;
-    top: 0;
+.l-btn{
+    padding-left: 40px;
+}
+.ri-video-line{
+    border-radius: 50%;
 }
