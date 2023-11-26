@@ -1,11 +1,7 @@
-for(var i = 0; i<11; i++){
-    console.log("hii")
-}
+const arr = ["box", "circle", "try"];
 
-// var naam = prompt("give a password(the password is now)");
-// console.log(naam);
-// while(naam != "now"){
-//     naam = prompt("type a password");
-//     console.log(naam);
-// }
-
+document.querySelector(`button`).addEventListener("click",() => {
+  const num = Math.floor(Math.random() * arr.length);
+  // console.log(arr[num]);
+  document.querySelector(".box").classList.add(arr[num]);
+})

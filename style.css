@@ -1,80 +1,35 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: gilroy;
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
 }
 html,body{
-    width: 100%;
-    height: 100%;
+height: 100%;
+width: 100%;
 }
 #main{
-    width: 100%;
-    height: 100%;
-    display: flex;
+width: 100%;
+background-color: black;
 }
-#left{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(images/watch-ultra.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#container-first{
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
 }
-#left img{
-    width: 25%;
-    margin-top: 50px;
+button{
+    padding: 8px 22px;
 }
-#left h4{
-    margin: 20px 0px;
-    font-size: 24px;
-    font-weight: 400;
+.box{
+    /* clip-path: inset(5% 20% 15% 10%); */
+    width: 300px;
+    height: 300px;
+    background-color: red;
 }
-#left h5{
-    font-size: 19px;
-    font-weight: 400;
-    opacity: .5;
+.circle{
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
-.link{
-    margin-top: 25px;
-}
-.link a{
-    color: #0066CC;
-    text-decoration: none;
-}
-.link a:hover{
-    text-decoration: underline solid #0066CC;
-}
-#l-btn{
-    padding-left: 40px;
-}
-#right{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(images/apple-watch.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#right img{
-    width: 50%;
-    margin-top: 50px;
-}
-#right h4{
-    text-align: center;
-    margin: 5px 0px;
-    font-size: 24px;
-    font-weight: 400;
-}
-.l-btn{
-    padding-left: 40px;
-}
-.ri-video-line{
-    border-radius: 50%;
+.try{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
