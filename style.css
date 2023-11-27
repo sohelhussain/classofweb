@@ -10,6 +10,7 @@ width: 100%;
 #main{
 width: 100%;
 background-color: black;
+cursor: none;
 }
 #container-first{
 height: 100vh;
@@ -17,19 +18,19 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+position: relative;
 }
-button{
-    padding: 8px 22px;
+#cursor{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
 }
-.box{
-    /* clip-path: inset(5% 20% 15% 10%); */
-    width: 300px;
-    height: 300px;
-    background-color: red;
-}
-.circle{
-    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-}
-.try{
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+h1{
+    font-size: 100px;
+    color: white;
+    z-index: 99;               /* isme ye courser div or h1 ke beach me aata he to use se bachne liye ham z-index use kar rhe hen */
+    mix-blend-mode: difference;
 }
