@@ -2,6 +2,7 @@
 margin: 0%;
 padding: 0%;
 box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
 }
 html,body{
 height: 100%;
@@ -9,36 +10,22 @@ width: 100%;
 }
 #main{
 width: 100%;
-background-color: black;
-/* cursor: none; */
 }
 #container-first{
 height: 100vh;
 width: 100%;
-/* display: flex;
-align-items: center;
-justify-content: space-evenly; */
-position: relative;
 }
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
-    border: 1px solid white;
-    position: absolute;
+#container-two{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* .box-selected{
-    background-image: url(blob:https://web.whatsapp.com/2b1bf6e2-e283-405c-8cbc-82571929b5ec);
-    background-size: cover;
-    background-position: center;
+img{
+    height: 33%;
 }
-.box-selected2{
-    background-image: url(https://pics.clipartpng.com/Leaf_PNG_Clip_Art-1968.png);
-    background-size: cover;
-    background-position: center;
+#container-third{
+    width: 100%;
+    height: 100vh;
 }
-.box-selected3{
-    background-image: url(http://127.0.0.1:5500/images/pngimg.com%20-%20fanta_PNG17.png);
-    background-size: cover;
-    background-position: center;
-} */
