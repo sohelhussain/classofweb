@@ -10,22 +10,28 @@ width: 100%;
 }
 #main{
 width: 100%;
+position: relative;
+overflow: hidden;
 }
 #container-first{
 height: 100vh;
 width: 100%;
+position: relative;
 }
-#container-two{
+.swiper {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-img{
-    height: 33%;
-}
-#container-third{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 700px;
+  }
+
+  .swiper-slide img {
+    display: block;
     width: 100%;
-    height: 100vh;
-}
+  }
