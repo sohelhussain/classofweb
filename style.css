@@ -17,6 +17,8 @@ overflow: hidden;
 height: 100vh;
 width: 100%;
 position: relative;
+background-color: black;
+color: white;
 }
 .swiper {
     width: 100%;
