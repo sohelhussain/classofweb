@@ -26,8 +26,27 @@
 //                 **CONDITIONAL STATEMENTS** 
 
 // 9) Accept two numbers and print the greatest between them
+
+// const askUesr = Number(prompt("Enter a number"));
+// const askUesr2 = Number(prompt("Enter a number"));
+
+// if(askUesr<askUesr2) {
+//     console.log(askUesr2);
+// }else{
+//     console.log(askUesr);
+// }
+
 // 10) Accept the gender from the user (M or F) and print the respective greeting message
 //      Ex - Good Morning Sir (on the basis of gender)
+
+// const gender = prompt('Gender');
+// if (gender=='Male'){
+// console.log(`Good Morning sir: ${gender}`);
+// }else if (gender=='Female'){
+// console.log(`Good Morning mem: ${gender}`);
+
+// }
+
 // 11) Extend the previous program and handle the wrong inputs.
 //       Print Good Morning sir for input m or M & Good morning Mam for input F or f 
 //       else print Wrong Input
