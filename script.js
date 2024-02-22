@@ -131,9 +131,6 @@
 // }
 // const sa = salary(userSalary);
 
-
-
-
 // 18) Ask a user 3 sides of triangle and check✅
 // 	equilateral triangle
 // 	isoscales trianle
@@ -195,16 +192,46 @@
 
 // 40) Create an array named fruits containing three different types of fruits. Log each fruit to the console.✅
 
-// const arr = ["apple", "banana", "mango"];
 // arr.forEach((e)=>{
 //     console.log(e);
 // })
 
-// 41) Write a program that checks if a specific fruit exists in the fruits array from last question.
+// 41) Write a program that checks if a specific fruit exists in the fruits array from last question.✅
 
-// 42) Create an array named evenNumbers using a loop, containing even numbers from 2 to 10.
+// const arr = ["apple", "banana", "mango"];
 
-// 43) Write a loop to find and print the sum of all elements in an array of numbers.
+// arr.forEach(e => {
+//     if(e === "apple"){
+//         console.log("apple");
+//     }
+// })
+
+
+// 42) Create an array named evenNumbers using a loop, containing even numbers from 2 to 10.✅
+// let evenNumbers = []
+// for(i = 2; i<= 10; i+=2){
+//     evenNumbers.push(i)
+// }
+// console.log(evenNumbers);
+
+// 43) Write a loop to find and print the sum of all elements in an array of numbers.✅
+// const arr = [2,4,6,8,10];
+// let sum = 0;
+// for(let val =  val < arr.length; val++){
+//      sum += arr[val];
+//      console.log(sum);
+//     }
+
+
+// solve this by for of loop 
+// let sum = 0;
+// for (let num of arr) {
+//     sum += num; // we accsess the every index of the array in for loop like this 
+//     console.log(sum);
+//     // arr[val]        we are don't accsess the index of element like this in this for of looop
+// }
+
+
 
 // 44) Write a simple JavaScript program to join all elements of the following array into a string.
 // Sample array : myColor = ["Red", "Green", "White", "Black"];
@@ -212,6 +239,7 @@
 // "Red,Green,White,Black"
 // "Red,Green,White,Black"
 // "Red+Green+White+Black"
+
 
 // 45) Find the largest number in an array of numbers using a loop and conditional statements.
 
