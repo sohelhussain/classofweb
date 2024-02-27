@@ -1,11 +1,11 @@
 // **BASIC INPUT OUTPUT**
 
-// 1) Make a variable user and initialize a value "Ram" and print it on console ✅
+// ✅1) Make a variable user and initialize a value "Ram" and print it on console 
 
 // const user = "Ram";
 // console.log(user);
 
-// 2) Make two variables and print their sum, mul, div, sub✅
+// ✅2) Make two variables and print their sum, mul, div, sub
 
 // const intA = 5
 // const intB = 7
@@ -15,7 +15,7 @@
 // const div = intA / intB
 // const sub = intA - intB
 
-// 3) Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7. ✅
+// ✅3) Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7. 
 
 // const triangleArea = (a, b, c) => {
 //     const s = (a + b + c) / 2;
@@ -25,7 +25,7 @@
 // const ans = triangleArea(5, 6, 7);
 // console.log(ans);
 
-// 4) Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then print triple their sum.✅
+// ✅4) Write a JavaScript program to compute the sum of the two given integers. If the two values are the same, then print triple their sum.
 
 // const sumCalculate = (a, b) => {
 //   let sum = a + b;
@@ -37,23 +37,23 @@
 // const ansSum = sumCalculate(2, 2);
 // console.log(ansSum);
 
-// 5) Accept a number from a user and print it on console✅
+// ✅5) Accept a number from a user and print it on console
 // const user = Number(prompt('Number'))
 // console.log(user);
 
-// 6) Ask a user his/her name and say hello (eg. "Hello Sarthak")✅
+// ✅6) Ask a user his/her name and say hello (eg. "Hello Sarthak")
 // const user = prompt('enter your name')
 // const fullName = "Hello";
 // console.log(fullName + " " + user);
 
-// 7) Accept two integers from user and print the sum✅
+// ✅7) Accept two integers from user and print the sum
 //    Ex - The sum of 45 & 12 = 57
 
 // const num1 = Number(prompt("enter first number"))
 // const num2 = Number(prompt("enter first number"))
 // console.log(num1+num2);
 
-// 8) Accept the User's name, age and print in following manner✅
+// ✅8) Accept the User's name, age and print in following manner
 //    Ex - Hello Shery, you are 12 years old.
 
 // const fullName = prompt("Enter your name");
@@ -62,7 +62,7 @@
 
 //                 **CONDITIONAL STATEMENTS**
 
-// 9) Accept two numbers and print the greatest between them✅
+// ✅9) Accept two numbers and print the greatest between them
 
 // const askUesr = Number(prompt("Enter a number"));
 // const askUesr2 = Number(prompt("Enter a number"));
@@ -73,7 +73,7 @@
 //     console.log(askUesr);
 // }
 
-// 10) Accept the gender from the user (M or F) and print the respective greeting message✅
+// ✅10) Accept the gender from the user (M or F) and print the respective greeting message
 //      Ex - Good Morning Sir (on the basis of gender)
 
 // const gender = prompt('Gender');
@@ -98,7 +98,7 @@
 
 // 16) ask a user his bijli ki units and if it is more than 100 unit calculate bill on the basis of 10 rs/ unit, if more than 50 units 8 rs/unit and if less 7 rs/unit
 
-// 17) ask a user his salary and if it is more than 1 lakh 30% tax if more than 70k 20% tax and if more than 50k 10% tax and less than that no tax and print tax amount and amount left after paying tax✅
+// ✅17) ask a user his salary and if it is more than 1 lakh 30% tax if more than 70k 20% tax and if more than 50k 10% tax and less than that no tax and print tax amount and amount left after paying tax
 
 //ther is a formula of function calculate (persentage*amount)/100
 
@@ -131,7 +131,7 @@
 // }
 // const sa = salary(userSalary);
 
-// 18) Ask a user 3 sides of triangle and check✅
+// ✅18) Ask a user 3 sides of triangle and check
 // 	equilateral triangle
 // 	isoscales trianle
 // 	scalene triangle
@@ -190,13 +190,13 @@
 
 // 		**Array**
 
-// 40) Create an array named fruits containing three different types of fruits. Log each fruit to the console.✅
+// ✅40) Create an array named fruits containing three different types of fruits. Log each fruit to the console.
 
 // arr.forEach((e)=>{
 //     console.log(e);
 // })
 
-// 41) Write a program that checks if a specific fruit exists in the fruits array from last question.✅
+// ✅41) Write a program that checks if a specific fruit exists in the fruits array from last question.
 
 // const arr = ["apple", "banana", "mango"];
 
@@ -207,14 +207,14 @@
 // })
 
 
-// 42) Create an array named evenNumbers using a loop, containing even numbers from 2 to 10.✅
+// ✅42) Create an array named evenNumbers using a loop, containing even numbers from 2 to 10.
 // let evenNumbers = []
 // for(i = 2; i<= 10; i+=2){
 //     evenNumbers.push(i)
 // }
 // console.log(evenNumbers);
 
-// 43) Write a loop to find and print the sum of all elements in an array of numbers.✅
+// ✅43) Write a loop to find and print the sum of all elements in an array of numbers.
 // const arr = [2,4,6,8,10];
 // let sum = 0;
 // for(let val =  val < arr.length; val++){
@@ -243,9 +243,42 @@
 
 // 45) Find the largest number in an array of numbers using a loop and conditional statements.
 
+// const arr = [1, 2, 3, 14, 5, 6, 7];
+
+// for(let i = 0; i<arr.length; i++){
+//     console.warn(i);
+//     for(let j = 0; j<arr.length; j++){
+//         console.log(j);
+
+//     }
+// }
+
 // 46) Write a JavaScript program to sort the items of an array.
 // Sample array : var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 // Sample Output : -4,-3,1,2,3,5,6,7,8
+
+// --solutions:-
+
+// we are using bubble short to the solve this quetion (short the array).
+
+// const arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+
+// for(let i = 0; i < arr1.length; i++) {
+//     console.warn(arr1[i]);
+//     for(let j = 0; j < arr1.length; j++) {
+//         console.log(arr1[j]);
+//         if(arr1[j]>arr1[j+1]){
+//             let temp = arr1[j]
+//             arr1[j] = arr1[j+1]
+//             arr1[j+1] = temp
+//         }
+//     }
+// }
+
+
+
+
+
 
 // 47) Write a JavaScript program to find the most frequent item in an array.
 // Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
