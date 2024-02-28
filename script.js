@@ -241,19 +241,29 @@
 // "Red+Green+White+Black"
 
 
-// 45) Find the largest number in an array of numbers using a loop and conditional statements.
+//✅ 45) Find the largest number in an array of numbers using a loop and conditional statements.
+
+
+
+// --solutions:-
+
 
 // const arr = [1, 2, 3, 14, 5, 6, 7];
 
-// for(let i = 0; i<arr.length; i++){
-//     console.warn(i);
-//     for(let j = 0; j<arr.length; j++){
-//         console.log(j);
+// let max = 0;
 
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
 //     }
+
 // }
 
-// 46) Write a JavaScript program to sort the items of an array.
+
+
+
+
+//✅ 46) Write a JavaScript program to sort the items of an array.
 // Sample array : var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 // Sample Output : -4,-3,1,2,3,5,6,7,8
 
