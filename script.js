@@ -290,9 +290,37 @@
 
 
 
-// 47) Write a JavaScript program to find the most frequent item in an array.
+//✅ 47) Write a JavaScript program to find the most frequent item in an array.
 // Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 // Sample Output : a ( 5 times )
+
+
+// --solutions:-
+
+
+// const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+// const solve = arr => {
+//     let freqMap = {};
+//     let maxFreq = 0;
+//     let mostFrequentItem;
+//     for(let i = 0; i < arr.length; i++) {
+//         let item = arr[i]
+//         if(freqMap[item] === undefined){
+//             freqMap[item] = 1;
+//         }
+//         else{
+//             freqMap[item]++;
+//         }
+//         if(freqMap[item]>maxFreq){
+//             maxFreq = freqMap[item]
+//             mostFrequentItem = item
+//         }
+//     }
+//     return mostFrequentItem
+// }
+// console.log(solve(arr));
+
 
 // 48) Square the value of every element in the array and make new array
 
