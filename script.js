@@ -306,6 +306,7 @@
 //     let mostFrequentItem;
 //     for(let i = 0; i < arr.length; i++) {
 //         let item = arr[i]
+//         console.log(freqMap[item]);
 //         if(freqMap[item] === undefined){
 //             freqMap[item] = 1;
 //         }
@@ -369,3 +370,36 @@
 
 //     // console.log(time);
 // }, 1000);
+
+
+// --------------------------------some quetins give by hars sharma --------------------------------
+
+
+//✅ 1. make an array which contains string, NaN and numbers and remove everything except string and put it in new array
+
+// --solvution---------->
+
+// const arr = ['s','o',NaN,23,NaN,'3'];
+
+// const newArr =  arr.filter(e => typeof e === 'string')
+
+
+// 2. make a function which takes an array and returns the count of the numbers as an object
+// example->
+// [1,,1,1,2,3,4,32,2,2,4] => {1: 3, 2: 3, 3: 1, 32: 0, 4: 2}
+
+// --solvution---------->
+
+// const fnc = arr => {
+
+// }
+
+// 3.make a function which accepts two parameters array and object and chek whether that array contains that object with same values
+
+// 4. make a function which accepts some string and return an object with following pattern:
+// example: hello
+// {h: 'e', l: 'l', o: null}
+
+// 5.make a function which accepts two string and return the string with all the similar letters next to each other
+// example: Hello Harsh
+// HHelloarsh
