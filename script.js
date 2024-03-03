@@ -396,6 +396,19 @@
 
 // 3.make a function which accepts two parameters array and object and chek whether that array contains that object with same values
 
+// const arr = [    
+//     { id: 1, name: "John" },
+//     { id: 2, name: "Alice" },
+//     { id: 3, name: "Bob" }
+// ]
+// const obj = {id: 1, name: "Alice"}
+
+// const fnc = (arr, obj) => {
+//     for(let i = 0; i< arr.length; i++){
+//         console.log(arr[i]);
+//     }
+// }
+// console.log(fnc(arr,obj));
 // 4. make a function which accepts some string and return an object with following pattern:
 // example: hello
 // {h: 'e', l: 'l', o: null}
@@ -403,3 +416,38 @@
 // 5.make a function which accepts two string and return the string with all the similar letters next to each other
 // example: Hello Harsh
 // HHelloarsh
+
+
+
+// letcode =169,229
+// condition o(n) & o(1)
+
+// difind the number in the array that repet more then n/2 times 
+
+
+// make a two variable
+
+
+// this is the wrong awnser
+
+// const arr = [2,2,3,2,1,2,7,2]
+
+// const vroot = arr => {
+//     let count = 0;
+// let element = 0;
+
+// for (let i = 0; i < arr.length; i++){
+//     if(count == 0){
+//         count = arr[i]
+//     }
+//     if(arr[i] == element){
+//         count+= 1
+//     }
+//     else{
+//         count -= 1
+//     }
+// }
+// return element
+// }
+// vroot(arr);
+// console.log(vroot(arr));
