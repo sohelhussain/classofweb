@@ -298,7 +298,9 @@
 // --solutions:-
 
 
-// const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+// this is a hash map to find most frequent items in an array
 
 // const solve = arr => {
 //     let freqMap = {};
@@ -321,6 +323,46 @@
 //     return mostFrequentItem
 // }
 // console.log(solve(arr));
+
+
+// let count = 0;
+// let maxFreq = 0;
+// let majorElement = 0;
+
+// for(let i = 0; i<arr.length; i++){
+//     for(let j = 0; j<arr.length; j++){
+//         if(arr[i] === arr[j]){
+//             count++;
+//         }
+//     }
+//     if(count>maxFreq){
+//         maxFreq = count;
+//         majorElement = arr[i]
+//     }
+// }
+
+// console.log(majorElement);
+
+// var count = 0
+// var maxCount = 0;
+// var majorityElement = 0;
+
+
+// for(var i = 0 ; i < arr.length ;i++){
+//     count = 0
+//     for(var j = 0 ; j < arr.length ;j++){
+//         if(arr[i] == arr[j]){
+//             count++;
+//         }
+//     }
+//     if (count > maxCount) {
+//         maxCount = count;
+//         majorityElement = arr[i];
+//     }
+
+// }
+
+// console.log(majorityElement);
 
 
 // 48) Square the value of every element in the array and make new array
@@ -451,3 +493,34 @@
 // }
 // vroot(arr);
 // console.log(vroot(arr));
+
+
+
+
+
+
+// const array = [
+//     { name: "sofa", type: "interior", price: 12200},
+//     { name: "table", type: "interior", price: 1200},
+//     { name: "bed", type: "interior", price: 17000},
+//     { name: "bottles", type: "essntials", price: 1200},
+//     { name: "joote", type: "sports", price: 5000},
+//     { name: "bag", type: "sports", price: 200},
+// ];
+
+// let obj = {}
+
+// array.forEach((elem)=>{
+//     if(obj[elem.type] === undefined){
+//         obj[elem.type] = [elem]
+//     } else{
+//         obj[elem.type].push(elem)
+//     }
+// })
+
+
+// Ismein dekho, hum obj[val.value] ko check kar rahe hain ki yeh undefined hai ya nahi. Agar yeh undefined hai, matlab is key (val.value) ke saath obj object mein koi array nahi hai. Iss case mein, hum ek naya array bana lete hain jismein hum val object daal dete hain aur use obj[val.value] ke saath assign kar dete hain.
+
+// Agar obj[val.value] undefined nahi hai, matlab is key ke saath already ek array hai. Iss case mein, hum val ko uss array ke end mein push() method se daal dete hain.
+
+// Toh, obj[val.value] ek array ban jata hai ya toh kyunki humne use explicit taur par array [val] ke saath banaya hota hai, ya kyunki woh pehle se ek array hota hai aur hum val ko usmein daal dete hain push() method se.
