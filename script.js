@@ -298,7 +298,7 @@
 // --solutions:-
 
 
-const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+// const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 
 // this is a hash map to find most frequent items in an array
 
@@ -524,3 +524,104 @@ const arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 // Agar obj[val.value] undefined nahi hai, matlab is key ke saath already ek array hai. Iss case mein, hum val ko uss array ke end mein push() method se daal dete hain.
 
 // Toh, obj[val.value] ek array ban jata hai ya toh kyunki humne use explicit taur par array [val] ke saath banaya hota hai, ya kyunki woh pehle se ek array hota hai aur hum val ko usmein daal dete hain push() method se.
+
+
+
+
+
+
+
+// ----------------------------------------------------------------
+// Question:
+
+// Given an array of objects, each representing a person with properties name, id, and friends (an array of friends' names), write a JavaScript function findFriendsByName that takes the array of objects and a friend's name as input. The function should return an array of objects representing the people who have the input friend as one of their friends.
+
+const people = [
+    { name: 'Alice', id: 1, friends: ['Bob', 'Charlie'] },
+    { name: 'Bob', id: 2, friends: ['Alice', 'David'] },
+    { name: 'Charlie', id: 3, friends: ['Alice', 'Eve'] },
+    { name: 'David', id: 4, friends: ['Bob'] },
+    { name: 'Eve', id: 5, friends: ['Charlie'] }
+];
+
+// const logd = 'Alice'
+
+// const ans = people.filter(person => person.name !== 'Alice');
+// const ans = people.filter(person => person.friends.indexOf('Bob') !== -1);
+
+
+
+
+
+
+// ----------------------------------------------------------------some questions of indexOf method
+
+// 1) Given an array of numbers, write a JavaScript function to find the index of a specific number. If the number is not present, return -1.
+
+// const arr2 = [1, 2, 3, 4,4]
+
+// const fnc2 = (num,ind) => {
+//     return num.indexOf(ind)
+// }
+
+// console.log(fnc2(arr2,4));
+
+
+// 2) Write a JavaScript function that takes a string and a substring as input and returns the index of the first occurrence of the substring in the string. If the substring is not found, return -1.
+
+// const str = 'hello world'
+
+// const fnc = (str, sub) => {
+//     return str.indexOf(sub)
+// }
+// console.log(fnc(str, 'sohel')) ;
+
+
+// 3) Write a JavaScript function to find the index of the second occurrence of a particular element in an array. If the element appears only once, return -1.
+
+// const arr = [1, 2, 3,4,5,6,7,8,8,8,8,9,10,11,12,2,2];
+
+
+
+
+
+// function findSecondOccurrenceIndex(arr, target) {
+//     let firstIndex = -1;
+//     let secondIndex = -1;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === target) {
+//             if (firstIndex === -1) {
+//                 firstIndex = i;
+//             } else {
+//                 secondIndex = i;
+//                 break;
+//             }
+//         }
+//     }
+
+//     if (secondIndex !== -1) {
+//         return secondIndex;
+//     } else {
+//         return -1;
+//     }
+// }
+// console.log(findSecondOccurrenceIndex(arr, 8));
+
+
+
+// 4) Write a JavaScript function that takes a string, a search value, and a replacement value as input. The function should replace all occurrences of the search value in the string with the replacement value.
+// const text = "The quick brown fox jumps over the lazy dog";
+// const fnc = (str, rep, intex) => {
+//     return str.split(rep).join(intex);
+// }
+// console.log(fnc(text, "The quick brown", "the tost is"));
+
+// 5) Write a JavaScript function to check if a specific value exists in an array. Return true if the value exists, and false otherwise.
+
+// const arr = [1, 2, 3,4,5,6,7,8,8,8,8,9,10,11,12,2,2];
+
+// const fnc = (arr, ser) => {
+//    return arr.indexOf(ser) !== -1
+// }
+// console.log(fnc(arr, 3));
