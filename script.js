@@ -447,13 +447,20 @@
 
 // const fnc = (arr, obj) => {
 //     for(let i = 0; i< arr.length; i++){
-//         console.log(arr[i]);
+//         if(arr[i].name === obj.name){
+//             return true
+//         }
 //     }
 // }
 // console.log(fnc(arr,obj));
+
+
 // 4. make a function which accepts some string and return an object with following pattern:
 // example: hello
 // {h: 'e', l: 'l', o: null}
+
+
+
 
 // 5.make a function which accepts two string and return the string with all the similar letters next to each other
 // example: Hello Harsh
@@ -622,6 +629,34 @@ const people = [
 // const arr = [1, 2, 3,4,5,6,7,8,8,8,8,9,10,11,12,2,2];
 
 // const fnc = (arr, ser) => {
-//    return arr.indexOf(ser) !== -1
+//    return arr.indexOf(ser) !== -1        //apan yanha par bol rahe hen ki 200 agar is array me he jo ki nhi he to ye -1 return karega or fir apan bol rahe hen ki -1 or -1 dono ek barabar nhi he jo ki jhut he to isliye hame false milega
 // }
-// console.log(fnc(arr, 3));
+// console.log(fnc(arr, 200));
+
+
+
+
+// question most accoring character in the string
+
+// solution------------------------>
+
+const str = "sohell";
+let obj = {};
+let max = 1;
+let sip = 0;
+str.split("").forEach((char)=>{
+    obj[char] = obj[char]?obj[char]+1:1;
+    console.log(obj[char]);
+    // if(obj[char]){
+    //     obj[char] = obj[char]+1
+    // }else{                               //ese bhi likh sakte hen
+    //     obj[char] = +1
+    // }
+})
+if(max > sip){
+    sip = max;
+}
+for(let k in obj){
+    // console.log(k);
+}
+// console.log(sip);

@@ -210,3 +210,49 @@ const fnc = num => {
     return false        //In the context of the tic-tac-toe game and the provided code, the return false; statement is used to indicate that no player has won the game after checking all rows, columns, and diagonals for winning combinations.
 }
 console.log(fnc(tic)); */
+
+
+
+// --------------------------------------------------------------day ->3  6/3/24--------
+
+// Palindrome Checker:
+
+// 11) Write a function that takes a string as input and returns true if the string is a palindrome (reads the same forwards and backwards), and false otherwise. Ignore non-alphanumeric characters.
+
+// ----solution-------->
+
+// const fnc = str => {
+//     let newStr = str.replace(/[^a-z0-9]/g, '').split("").reverse().join("");
+//     if(str.toLowerCase() !== newStr.toLowerCase()) return false;
+// }
+// console.log(fnc("level"));
+
+
+
+
+// ----logic solution-------->
+
+// const fnc = str => {
+//     let left = 0;
+//     let right = str.length -1
+//     while(left < right) {
+//        if(str[left] === str[right]) return true;
+//         left++;
+//         right--;
+//     }
+//     // console.log(right);
+//     return false;
+// };
+// console.log(fnc("sohelel"));
+
+
+// 12) Write a function that takes a number as input and returns true if it's a prime number, and false otherwise.
+
+// const fnc = num => {
+//     if(num <= 1) return false;
+//     for(let i= 2; i < num; i++){
+//          if(num % i === 0) return false;
+//     }
+//     return true;
+// };
+// console.log(fnc(13));
