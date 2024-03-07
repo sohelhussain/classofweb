@@ -640,23 +640,10 @@ const people = [
 
 // solution------------------------>
 
-const str = "sohell";
-let obj = {};
-let max = 1;
-let sip = 0;
-str.split("").forEach((char)=>{
-    obj[char] = obj[char]?obj[char]+1:1;
-    console.log(obj[char]);
-    // if(obj[char]){
-    //     obj[char] = obj[char]+1
-    // }else{                               //ese bhi likh sakte hen
-    //     obj[char] = +1
-    // }
-})
-if(max > sip){
-    sip = max;
-}
-for(let k in obj){
-    // console.log(k);
-}
-// console.log(sip);
+// const str = "sohel";
+// let obj = {};
+
+// str.split("").forEach((char)=>{
+//     obj[char] = obj[char]?obj[char]+1:1;
+// })
+// console.log(obj);

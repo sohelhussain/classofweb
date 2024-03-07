@@ -217,7 +217,7 @@ console.log(fnc(tic)); */
 
 // Palindrome Checker:
 
-// 11) Write a function that takes a string as input and returns true if the string is a palindrome (reads the same forwards and backwards), and false otherwise. Ignore non-alphanumeric characters.
+//✅ 11) Write a function that takes a string as input and returns true if the string is a palindrome (reads the same forwards and backwards), and false otherwise. Ignore non-alphanumeric characters.
 
 // ----solution-------->
 
@@ -246,7 +246,7 @@ console.log(fnc(tic)); */
 // console.log(fnc("sohelel"));
 
 
-// 12) Write a function that takes a number as input and returns true if it's a prime number, and false otherwise.
+//✅ 12) Write a function that takes a number as input and returns true if it's a prime number, and false otherwise.
 
 // const fnc = num => {
 //     if(num <= 1) return false;
@@ -256,3 +256,56 @@ console.log(fnc(tic)); */
 //     return true;
 // };
 // console.log(fnc(13));
+
+
+// --------------------------------------------------------------day ->4  7/3/24--------
+
+// -----------------------> some ternary operator question
+
+//✅ 13) Write a JavaScript function that takes an integer as input and returns "Even" if the number is even, and "Odd" if the number is odd, using a ternary operator.
+
+// const fnc = num => {
+//     return num % 2 === 0 ? "Even" : "Odd";
+// };
+// console.log(fnc(12));
+
+
+//✅ 14) Write a function that takes two numbers as input and returns the larger of the two numbers using a ternary operator.
+
+// const fnc = (num,num2) => {
+//     return num > num2 ? num : num2;
+// };
+// console.log(fnc(14,22));
+
+
+//✅ 15) Create a function that takes a number as input and returns "Positive" if the number is greater than zero, "Negative" if it's less than zero, and "Zero" if it's equal to zero, using a ternary operator.
+
+// const fnc = num => {
+//     return num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";   // check the first condition is true then run the code and false then the check second condition is false the run is zero.
+// }
+// console.log(fnc(-1));
+
+
+
+
+//✅ 16) Write a function that takes an array of numbers as input and returns "All positive" if all numbers are positive, "All negative" if all numbers are negative, and "Mixed" if the array contains both positive and negative numbers, using a ternary operator.
+
+/* const arr = [-1,-2,-3,-4,-5,-6,-7]
+
+const fnc = num => {
+    const pos = num.every(num => num > 0)  // if this is true then return all positive 
+    const neg = num.every(num => num < 0) //  if this is true then return all negetive  then all the condition false otherwise run "Mixed"
+    return pos ? "All Positive" : neg ? "All Negative" : "Mixed"
+}
+
+console.log(fnc(arr)); */
+
+
+// ✅ 15) Create a function that takes a string as input and returns "Short" if the length of the string is less than or equal to 5, and "Long" if it's greater than 5 characters, using a ternary operator.
+
+// const str = "sohesadfl"
+
+// const fnc = str => {
+//     return str.length <= 5 ? "short" : "long"
+// }
+// console.log(fnc(str));
