@@ -309,3 +309,27 @@ console.log(fnc(arr)); */
 //     return str.length <= 5 ? "short" : "long"
 // }
 // console.log(fnc(str));
+
+
+// --------------------------------------------------------------day ->5  8/3/24--------
+
+
+// -----------------------> some reduce question
+
+// ✅ 16) Write a function that takes an array of numbers and returns the sum of all the numbers using the reduce function.
+
+/* const numbers = [1, 2, 3, 4, 5];
+ const fnc = numbers => numbers.reduce((acc, n) => acc + n, 0);
+ console.log(fnc(numbers)); */
+
+//✅ 17) Create a function that takes an array of strings and concatenates them into a single string using the reduce function.
+
+/* const strings = ["Hello", " ", "world", "!"];
+const fnc = str => str.reduce((acc, s) => acc + s, )
+console.log(fnc(strings)); */
+
+// 18) Write a function that takes an array of numbers and returns the maximum number in the array using the reduce function.
+
+// 19) Create a function that takes an array of objects representing expenses, where each object has a amount property, and returns the total sum of all expenses using the reduce function.
+
+// 20) Write a function that takes an array of words and returns an object where the keys are the words and the values are the number of occurrences of each word in the array, using the reduce function.
