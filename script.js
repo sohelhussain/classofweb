@@ -426,15 +426,21 @@
 // const newArr =  arr.filter(e => typeof e === 'string')
 
 
-// 2. make a function which takes an array and returns the count of the numbers as an object
+//✅ 2. make a function which takes an array and returns the count of the numbers as an object
 // example->
 // [1,,1,1,2,3,4,32,2,2,4] => {1: 3, 2: 3, 3: 1, 32: 0, 4: 2}
 
 // --solvution---------->
 
-// const fnc = arr => {
+// const arr = [1,,1,1,2,3,4,32,2,2,4];
 
-// }
+// let map = {}
+
+// const fnc = arr => arr.filter( e => map[e] = map[e]?map[e]+1:1)
+// fnc(arr);
+// console.log(map);
+
+
 
 // 3.make a function which accepts two parameters array and object and chek whether that array contains that object with same values
 
@@ -465,6 +471,25 @@
 // 5.make a function which accepts two string and return the string with all the similar letters next to each other
 // example: Hello Harsh
 // HHelloarsh
+
+const str1 = "Hello";
+const str2 = "Harsh";
+
+const fnc = (str1, str2) => {
+    let clutter = "";
+    for(let one of str1){
+        str2.includes(one)? clutter +=one:undefined;
+    }
+    for(let two of str2){
+        str1.includes(two) && !clutter.includes(two)? clutter +=two:undefined;
+    }
+    return clutter
+};
+console.log(fnc(str1, str2));
+
+
+
+
 
 
 
