@@ -436,29 +436,30 @@
 
 // let map = {}
 
-// const fnc = arr => arr.filter( e => map[e] = map[e]?map[e]+1:1)
-// fnc(arr);
+// const fnc2 = arr => arr.filter( e => map[e] = map[e]?map[e]+1:1)
+// fnc2(arr);
 // console.log(map);
 
 
 
 // 3.make a function which accepts two parameters array and object and chek whether that array contains that object with same values
 
-// const arr = [    
-//     { id: 1, name: "John" },
-//     { id: 2, name: "Alice" },
-//     { id: 3, name: "Bob" }
-// ]
-// const obj = {id: 1, name: "Alice"}
+const arr3 = [    
+    { id: 1, name: "John" },
+    { id: 2, name: "Alice" },
+    { id: 3, name: "Bob" }
+]
+const obj = {id: 1, name: "Alice"}
 
-// const fnc = (arr, obj) => {
-//     for(let i = 0; i< arr.length; i++){
-//         if(arr[i].name === obj.name){
-//             return true
-//         }
-//     }
-// }
-// console.log(fnc(arr,obj));
+const fnc3 = (arr, obj) => {
+    for(let i = 0; i < arr.length; i++){
+        if(JSON.stringify(arr[i]) === JSON.stringify(obj)){
+            return true
+        }
+        return false
+    }
+}
+console.log(fnc3(arr3,obj));
 
 
 // 4. make a function which accepts some string and return an object with following pattern:
@@ -472,20 +473,20 @@
 // example: Hello Harsh
 // HHelloarsh
 
-const str1 = "Hello";
-const str2 = "Harsh";
+// const str1 = "Hello";
+// const str2 = "Harsh";
 
-const fnc = (str1, str2) => {
-    let clutter = "";
-    for(let one of str1){
-        str2.includes(one)? clutter +=one:undefined;
-    }
-    for(let two of str2){
-        str1.includes(two) && !clutter.includes(two)? clutter +=two:undefined;
-    }
-    return clutter
-};
-console.log(fnc(str1, str2));
+// const fnc = (str1, str2) => {
+//     let clutter = "";
+//     for(let one of str1){
+//         str2.includes(one)? clutter +=one:undefined;
+//     }
+//     for(let two of str2){
+//         str1.includes(two) && !clutter.includes(two)? clutter +=two:undefined;
+//     }
+//     return clutter
+// };
+// console.log(fnc(str1, str2));
 
 
 
