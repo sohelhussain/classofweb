@@ -452,14 +452,27 @@ const arr3 = [
 const obj = {id: 1, name: "Alice"}
 
 const fnc3 = (arr, obj) => {
-    for(let i = 0; i < arr.length; i++){
-        if(JSON.stringify(arr[i]) === JSON.stringify(obj)){
-            return true
+    for(let i = 0; i < arr.length; i++) {
+        if (JSON.stringify(arr[i]) === JSON.stringify(obj)) {
+            return true; // Return true if the object is found
         }
-        return false
     }
-}
-console.log(fnc3(arr3,obj));
+    return false; // Return false if the object is not found
+};
+
+
+// console.log(fnc3(arr3,obj));
+
+const array = [
+        { name: 'Alice', age: 25 },
+        { name: 'Bob', age: 30 },
+        { name: 'Charlie', age: 35 }
+    ];
+    
+    const obj1 = { name: 'Alice', age: 25 }; 
+    
+    var containsObject = array.filter(arrVal => JSON.stringify(arrVal) === JSON.stringify(obj1));
+    console.log(containsObject);
 
 
 // 4. make a function which accepts some string and return an object with following pattern:
