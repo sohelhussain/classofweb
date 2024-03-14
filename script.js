@@ -444,40 +444,33 @@
 
 // 3.make a function which accepts two parameters array and object and chek whether that array contains that object with same values
 
-const arr3 = [    
-    { id: 1, name: "John" },
-    { id: 2, name: "Alice" },
-    { id: 3, name: "Bob" }
-]
-const obj = {id: 1, name: "Alice"}
+// const array = [
+//     { name: 'Alice', age: 25 },
+//     { name: 'Bob', age: 30 },
+//     { name: 'Charlie', age: 35 }
+// ];
 
-const fnc3 = (arr, obj) => {
-    for(let i = 0; i < arr.length; i++) {
-        if (JSON.stringify(arr[i]) === JSON.stringify(obj)) {
-            return true; // Return true if the object is found
-        }
-    }
-    return false; // Return false if the object is not found
-};
+// const obj1 = { name: 'Alice', age: 25 };
 
+// const fnc3 = (arr, obj) => arr.filter(e => JSON.stringify(e) === JSON.stringify(obj));
 
-// console.log(fnc3(arr3,obj));
-
-const array = [
-        { name: 'Alice', age: 25 },
-        { name: 'Bob', age: 30 },
-        { name: 'Charlie', age: 35 }
-    ];
-    
-    const obj1 = { name: 'Alice', age: 25 }; 
-    
-    var containsObject = array.filter(arrVal => JSON.stringify(arrVal) === JSON.stringify(obj1));
-    console.log(containsObject);
+// console.log(fnc3(array,obj1));
 
 
 // 4. make a function which accepts some string and return an object with following pattern:
 // example: hello
 // {h: 'e', l: 'l', o: null}
+
+// const str = 'hello';
+// let map = {};
+
+// for(let i = 0; i < str.length -1; i++){
+//     map[str[i]] = str[i + 1];
+// }
+// map[str[str.length - 1]] = null;
+// console.log(map);
+
+
 
 
 
