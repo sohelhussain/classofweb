@@ -248,6 +248,10 @@ console.log(fnc(tic)); */
 
 //✅ 12) Write a function that takes a number as input and returns true if it's a prime number, and false otherwise.
 
+
+// ----solution-------->
+
+
 // const fnc = num => {
 //     if(num <= 1) return false;
 //     for(let i= 2; i < num; i++){
@@ -264,6 +268,9 @@ console.log(fnc(tic)); */
 
 //✅ 13) Write a JavaScript function that takes an integer as input and returns "Even" if the number is even, and "Odd" if the number is odd, using a ternary operator.
 
+// ----solution-------->
+
+
 // const fnc = num => {
 //     return num % 2 === 0 ? "Even" : "Odd";
 // };
@@ -272,6 +279,10 @@ console.log(fnc(tic)); */
 
 //✅ 14) Write a function that takes two numbers as input and returns the larger of the two numbers using a ternary operator.
 
+
+// ----solution-------->
+
+
 // const fnc = (num,num2) => {
 //     return num > num2 ? num : num2;
 // };
@@ -279,6 +290,10 @@ console.log(fnc(tic)); */
 
 
 //✅ 15) Create a function that takes a number as input and returns "Positive" if the number is greater than zero, "Negative" if it's less than zero, and "Zero" if it's equal to zero, using a ternary operator.
+
+
+// ----solution-------->
+
 
 // const fnc = num => {
 //     return num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";   // check the first condition is true then run the code and false then the check second condition is false the run is zero.
@@ -289,6 +304,10 @@ console.log(fnc(tic)); */
 
 
 //✅ 16) Write a function that takes an array of numbers as input and returns "All positive" if all numbers are positive, "All negative" if all numbers are negative, and "Mixed" if the array contains both positive and negative numbers, using a ternary operator.
+
+
+// ----solution-------->
+
 
 /* const arr = [-1,-2,-3,-4,-5,-6,-7]
 
@@ -302,6 +321,10 @@ console.log(fnc(arr)); */
 
 
 // ✅ 15) Create a function that takes a string as input and returns "Short" if the length of the string is less than or equal to 5, and "Long" if it's greater than 5 characters, using a ternary operator.
+
+
+// ----solution-------->
+
 
 // const str = "sohesadfl"
 
@@ -318,21 +341,64 @@ console.log(fnc(arr)); */
 
 // ✅ 16) Write a function that takes an array of numbers and returns the sum of all the numbers using the reduce function.
 
+// ----solution-------->
+
+
 /* const numbers = [1, 2, 3, 4, 5];
  const fnc = numbers => numbers.reduce((acc, n) => acc + n, 0);
  console.log(fnc(numbers)); */
 
 //✅ 17) Create a function that takes an array of strings and concatenates them into a single string using the reduce function.
 
+
+// ----solution-------->
+
+
 /* const strings = ["Hello", " ", "world", "!"];
 const fnc = str => str.reduce((acc, s) => acc + s, )
 console.log(fnc(strings)); */
 
-// 18) Write a function that takes an array of numbers and returns the maximum number in the array using the reduce function.
+//✅ 18) Write a function that takes an array of numbers and returns the maximum number in the array using the reduce function.
 
-// 19) Create a function that takes an array of objects representing expenses, where each object has a amount property, and returns the total sum of all expenses using the reduce function.
 
-// 20) Write a function that takes an array of words and returns an object where the keys are the words and the values are the number of occurrences of each word in the array, using the reduce function.
+// ----solution-------->
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// const findMax = numbers => numbers.reduce( (max, curr) => Math.max(max, curr), -Infinity)
+// console.log(findMax(numbers));
+
+
+// explaination:=> in the Math.max(max= -Infinity, curr= current element) and the return are maximum number
+
+
+
+//✅ 19) Create a function that takes an array of objects representing expenses, where each object has a amount property, and returns the total sum of all expenses using the reduce function.
+
+
+// ----solution-------->
+
+
+// const expenses = [
+//     { amount: 100 },
+//     { amount: 200 },
+//     { amount: 50 },
+//     { amount: 300 }
+// ];
+
+// const totalExpenses = amount => expenses.reduce((total, expens) => total + expens.amount, 0) 
+// console.log(totalExpenses(expenses));
+
+
+
+//✅🔥 20) Write a function that takes an array of words and returns an object where the keys are the words and the values are the number of occurrences of each word in the array, using the reduce function.
+
+// const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+// const Hash = words => words.reduce((acc, word) => {
+//     acc[word] = acc[word] ? acc[word] + 1 : 1;
+//     return acc;
+// }, {});
+// console.log(Hash(words));
 
 
 // ---------------------------------------------------------------- day ->6 5/3/24------ some questions of indexOf method
